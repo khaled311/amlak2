@@ -51,10 +51,11 @@ $(function() {
   // Resize Body Padding
   $(window).on("resize", function() {
     $("body").css("padding-top", $(".head").innerHeight());
+    $(".wrapper .wrapper__video").css("top", $(".head").innerHeight())
   });
 
   $("body").css("padding-top", $(".head").innerHeight());
-
+  $(".wrapper .wrapper__video").css("top", $(".head").innerHeight())
   // Animation On Scroll
   // AOS.init();
 });
