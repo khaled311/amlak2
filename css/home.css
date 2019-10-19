@@ -207,7 +207,7 @@ ul.res {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #0c847b;
+  background-color: #FFF;
   z-index: 99;
   overflow-y: auto;
   -webkit-transition: 0.5s;
@@ -294,11 +294,11 @@ html[dir="ltr"] .sideNav.origin {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
-  color: #0b837a;
+  color: #fff;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #FFF;
+  background-color: #0c847b;
   font-family: "itBold";
 }
 
@@ -315,8 +315,8 @@ html[dir="ltr"] .sideNav.origin {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  background-color: #FFF;
-  color: #0b837a;
+  background-color: #0c847b;
+  color: #FFF;
   font-size: 14px;
   margin-left: auto;
   margin-right: 20px;
@@ -332,7 +332,7 @@ html[dir="ltr"] .sideNav .options .search_pop {
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
-  color: #FFF;
+  color: #0c847b;
   cursor: pointer;
 }
 
@@ -387,10 +387,11 @@ html[dir="ltr"] .sideNav .options .search_pop {
 .sideNav > ul > li a {
   width: 100%;
   display: block;
-  font-size: 20px;
-  color: #FFF;
+  color: #0c847b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 17px;
+  font-family: "itBold";
 }
 
 .sideNav > ul > li i {
@@ -443,7 +444,7 @@ html[dir="ltr"] .sideNav > ul > li i {
 }
 
 .sideNav .contact a {
-  color: #FFF;
+  color: #0c847b;
   display: block;
   margin-top: 15px;
   font-size: 16px;
@@ -477,6 +478,33 @@ html[dir="ltr"] .sideNav .contact i {
 html[dir="ltr"] .sideNav .contact i.fa-phone {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.sideNav .social {
+  margin-top: 20px;
+}
+
+.sideNav .social a {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.sideNav .social a:last-child {
+  margin-left: 0;
+}
+
+.sideNav .social a i {
+  color: #0c847b;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
 }
 
 .up {
@@ -558,15 +586,6 @@ html[dir="ltr"] .sideNav .contact i.fa-phone {
   transition: 0.5s;
 }
 
-.navbar.scrolled {
-  position: fixed;
-  top: 0;
-  padding: 10px 0 20px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  width: 100%;
-}
-
 @media (max-width: 991px) {
   .navbar {
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -609,25 +628,9 @@ html[dir="ltr"] .sideNav .contact i.fa-phone {
 }
 
 @media (max-width: 991px) {
-  .navbar .content .logo .desk-logo {
-    display: none;
+  .navbar .content .logo img {
+    width: 250px;
   }
-}
-
-@media (min-width: 992px) {
-  .navbar .content .logo .mob-logo {
-    display: none;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar .content .logo .mob-logo {
-    display: block;
-  }
-}
-
-.navbar .content .logo .mob-logo img {
-  width: 200px;
 }
 
 @media (max-width: 991px) {
@@ -1021,6 +1024,12 @@ footer .logo img {
 @media (max-width: 767px) {
   footer .logo img {
     margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  footer .logo img {
+    height: 100px;
   }
 }
 
