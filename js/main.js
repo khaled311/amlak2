@@ -35,7 +35,7 @@ $(function() {
   $(".navbar .links a").on("click", function(e) {
     e.preventDefault();
     $("html, body").animate({
-      scrollTop: $( "#" + $(this).attr("data-sec")).offset().top - $(".navbar").innerHeight()
+      scrollTop: $( "#" + $(this).attr("data-sec")).offset().top - $(".head").innerHeight()
     }, 1000)
   });
 
