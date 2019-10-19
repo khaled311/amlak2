@@ -251,6 +251,12 @@ html[dir="ltr"] .sideNav {
   opacity: 1;
 }
 
+.sideNav.open .contact a {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .sideNav.origin {
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -378,16 +384,6 @@ html[dir="ltr"] .sideNav .options .search_pop {
           transition-delay: 0.9s;
 }
 
-.sideNav > ul > li:nth-child(5) {
-  -webkit-transition-delay: 1.1s;
-          transition-delay: 1.1s;
-}
-
-.sideNav > ul > li:nth-child(6) {
-  -webkit-transition-delay: 1.3s;
-          transition-delay: 1.3s;
-}
-
 .sideNav > ul > li a {
   width: 100%;
   display: block;
@@ -452,14 +448,35 @@ html[dir="ltr"] .sideNav > ul > li i {
   margin-top: 15px;
   font-size: 16px;
   font-family: "itMd";
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
-.sideNav .contact a:not(:last-child) {
-  margin-left: 30px;
+.sideNav .contact a:nth-child(1) {
+  -webkit-transition-delay: 1.1s;
+          transition-delay: 1.1s;
+}
+
+.sideNav .contact a:nth-child(2) {
+  -webkit-transition-delay: 1.3s;
+          transition-delay: 1.3s;
 }
 
 .sideNav .contact i {
   margin-left: 13px;
+}
+
+html[dir="ltr"] .sideNav .contact i {
+  margin-left: 0;
+  margin-right: 13px;
+}
+
+html[dir="ltr"] .sideNav .contact i.fa-phone {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .up {
