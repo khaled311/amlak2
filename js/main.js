@@ -39,6 +39,15 @@ $(function() {
     }, 1000)
   });
 
+  // Side Nav
+  $(".sideNav li a").on("click", function(e) {
+    e.preventDefault();
+    $(".sideNav").removeClass("open");
+    $("html, body").animate({
+      scrollTop: $( "#" + $(this).attr("data-sec")).offset().top - $(".navbar").innerHeight()
+    }, 1000)
+  });
+
   // Preloder
   $(window).on("load", function() {
     $("html").css("overflow-y", "auto");
